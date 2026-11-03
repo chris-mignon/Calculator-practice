@@ -6,3 +6,13 @@ function toScreen(buttonValue) {
     // Append the button value to the current value of the display screen
     screen.value += buttonValue; 
 }
+
+function calculate(){
+    if( screen.value === "" || screen.value === undefined ){ 
+        screen.value = "0";
+    }
+    else {
+        screen.value = eval(screen.value);
+    }
+
+}
